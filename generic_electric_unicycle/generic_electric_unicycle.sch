@@ -367,7 +367,11 @@ Wire Wire Line
 Text Label 2450 5350 0    60   ~ 0
 BMF_signal-Blue_C
 Wire Wire Line
-	6950 4650 8450 4650
-Text Label 7500 4650 0    60   ~ 0
-BMF_signal-Yellow_C
+	6950 4650 8000 4650
+Text Label 7350 4650 0    60   ~ 0
+BMF_signal-Yellow_A
+Wire Wire Line
+	6950 4750 8000 4750
+Text Label 7350 4750 0    60   ~ 0
+Current_signal
 $EndSCHEMATC
