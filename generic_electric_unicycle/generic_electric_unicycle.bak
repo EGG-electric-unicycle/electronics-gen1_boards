@@ -241,4 +241,22 @@ Wire Wire Line
 	6950 4750 8000 4750
 Text Label 7350 4750 0    60   ~ 0
 Current_signal
+Wire Wire Line
+	13450 2600 15450 2600
+Text Label 14800 2600 0    60   ~ 0
+Bridge_A-High
+Wire Wire Line
+	13450 2600 13450 2450
+Wire Wire Line
+	13450 3500 15450 3500
+Text Label 14800 3500 0    60   ~ 0
+Bridge_B-High
+Wire Wire Line
+	13450 4400 15450 4400
+Text Label 14800 4400 0    60   ~ 0
+Bridge_C-High
+Wire Wire Line
+	13450 3500 13450 3350
+Wire Wire Line
+	13450 4400 13450 4200
 $EndSCHEMATC

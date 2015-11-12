@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:stm32
+LIBS:generic_electric_unicycle-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -117,7 +118,11 @@ Mosfet C - High
 Wire Wire Line
 	14350 2200 14000 2200
 Wire Wire Line
-	14350 1550 14350 3950
+	14350 1550 14350 2200
+Wire Wire Line
+	14350 2200 14350 3150
+Wire Wire Line
+	14350 3150 14350 3950
 Wire Wire Line
 	14350 3150 14000 3150
 Connection ~ 14350 2200
@@ -127,7 +132,13 @@ Connection ~ 14350 3150
 Wire Wire Line
 	11000 3950 11250 3950
 Wire Wire Line
-	11000 2200 11000 5750
+	11000 2200 11000 3100
+Wire Wire Line
+	11000 3100 11000 3950
+Wire Wire Line
+	11000 3950 11000 5300
+Wire Wire Line
+	11000 5300 11000 5750
 Wire Wire Line
 	11250 2200 11000 2200
 Wire Wire Line
@@ -162,7 +173,9 @@ Wire Wire Line
 Text Label 2900 6750 0    60   ~ 0
 Bridge_C-Low
 Wire Wire Line
-	12250 2200 13000 2200
+	12250 2200 12350 2200
+Wire Wire Line
+	12350 2200 13000 2200
 Wire Wire Line
 	12250 3100 13000 3100
 Wire Wire Line
@@ -259,4 +272,58 @@ Wire Wire Line
 	13450 3500 13450 3350
 Wire Wire Line
 	13450 4400 13450 4200
+Wire Bus Line
+	12350 7250 13350 7250
+Wire Bus Line
+	13350 7700 12350 7700
+Wire Bus Line
+	12350 7700 12350 7250
+Text Notes 12500 7500 0    60   ~ 0
+Hall sensor - A
+Wire Wire Line
+	11150 7500 12350 7500
+Text Label 11150 7500 0    60   ~ 0
+Hall_sensor_A
+Wire Bus Line
+	13350 7250 13350 7700
+Wire Bus Line
+	12350 7800 13350 7800
+Wire Bus Line
+	13350 8250 12350 8250
+Wire Bus Line
+	12350 8250 12350 7800
+Text Notes 12500 8050 0    60   ~ 0
+Hall sensor - B
+Wire Wire Line
+	11150 8050 12350 8050
+Text Label 11150 8050 0    60   ~ 0
+Hall_sensor_B
+Wire Bus Line
+	13350 7800 13350 8250
+Wire Bus Line
+	12350 8350 13350 8350
+Wire Bus Line
+	13350 8800 12350 8800
+Wire Bus Line
+	12350 8800 12350 8350
+Text Notes 12500 8600 0    60   ~ 0
+Hall sensor - C
+Wire Wire Line
+	11150 8600 12350 8600
+Text Label 11150 8600 0    60   ~ 0
+Hall_sensor_C
+Wire Bus Line
+	13350 8350 13350 8800
+Wire Wire Line
+	6950 4250 8000 4250
+Text Label 7400 4250 0    60   ~ 0
+Hall_sensor_A
+Wire Wire Line
+	6950 4150 8000 4150
+Text Label 7400 4150 0    60   ~ 0
+Hall_sensor_B
+Wire Wire Line
+	6950 4050 8000 4050
+Text Label 7400 4050 0    60   ~ 0
+Hall_sensor_C
 $EndSCHEMATC
