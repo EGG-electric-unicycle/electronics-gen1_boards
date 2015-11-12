@@ -234,26 +234,26 @@ Bridge_C-Low
 Wire Wire Line
 	11750 4400 11750 4200
 Wire Bus Line
-	11300 5100 12300 5100
+	11250 5150 12100 5150
 Wire Bus Line
-	12300 5100 12300 5550
+	12100 5150 12100 5450
 Wire Bus Line
-	12300 5550 11300 5550
+	12100 5450 11250 5450
 Wire Bus Line
-	11300 5550 11300 5100
-Text Notes 11450 5400 0    60   ~ 0
+	11250 5450 11250 5150
+Text Notes 11300 5400 0    60   ~ 0
 Current measure\ncircuit
 Wire Wire Line
-	12300 5300 13150 5300
+	12100 5300 12850 5300
 Wire Wire Line
-	11300 5300 11000 5300
+	11250 5300 11000 5300
 Connection ~ 11000 5300
-Text Label 12500 5300 0    60   ~ 0
+Text Label 12200 5300 0    60   ~ 0
 Current_signal
 Wire Wire Line
-	6950 4750 8000 4750
-Text Label 7350 4750 0    60   ~ 0
-Current_signal
+	6950 4450 8000 4450
+Text Label 7350 4450 0    60   ~ 0
+PS_signal(calibrate_wheel??)
 Wire Wire Line
 	13450 2600 15450 2600
 Text Label 14800 2600 0    60   ~ 0
@@ -273,47 +273,19 @@ Wire Wire Line
 Wire Wire Line
 	13450 4400 13450 4200
 Wire Bus Line
-	12350 7250 13350 7250
+	12350 7250 12950 7250
 Wire Bus Line
-	13350 7700 12350 7700
+	12950 7550 12350 7550
 Wire Bus Line
-	12350 7700 12350 7250
-Text Notes 12500 7500 0    60   ~ 0
-Hall sensor - A
+	12350 7550 12350 7250
+Text Notes 12400 7500 0    60   ~ 0
+Hall sensor\nA
 Wire Wire Line
-	11150 7500 12350 7500
-Text Label 11150 7500 0    60   ~ 0
+	11600 7400 12350 7400
+Text Label 11600 7400 0    60   ~ 0
 Hall_sensor_A
 Wire Bus Line
-	13350 7250 13350 7700
-Wire Bus Line
-	12350 7800 13350 7800
-Wire Bus Line
-	13350 8250 12350 8250
-Wire Bus Line
-	12350 8250 12350 7800
-Text Notes 12500 8050 0    60   ~ 0
-Hall sensor - B
-Wire Wire Line
-	11150 8050 12350 8050
-Text Label 11150 8050 0    60   ~ 0
-Hall_sensor_B
-Wire Bus Line
-	13350 7800 13350 8250
-Wire Bus Line
-	12350 8350 13350 8350
-Wire Bus Line
-	13350 8800 12350 8800
-Wire Bus Line
-	12350 8800 12350 8350
-Text Notes 12500 8600 0    60   ~ 0
-Hall sensor - C
-Wire Wire Line
-	11150 8600 12350 8600
-Text Label 11150 8600 0    60   ~ 0
-Hall_sensor_C
-Wire Bus Line
-	13350 8350 13350 8800
+	12950 7250 12950 7550
 Wire Wire Line
 	6950 4250 8000 4250
 Text Label 7400 4250 0    60   ~ 0
@@ -326,4 +298,76 @@ Wire Wire Line
 	6950 4050 8000 4050
 Text Label 7400 4050 0    60   ~ 0
 Hall_sensor_C
+Wire Wire Line
+	6950 5550 8450 5550
+Text Label 7350 5550 0    60   ~ 0
+LED_1-battery_indicator
+Wire Wire Line
+	2450 5650 3950 5650
+Text Label 2450 5650 0    60   ~ 0
+LED_2-battery_indicator
+Wire Wire Line
+	2450 5750 3950 5750
+Text Label 2450 5750 0    60   ~ 0
+LED_3-battery_indicator
+Wire Wire Line
+	2450 6050 3950 6050
+Text Label 2450 6050 0    60   ~ 0
+LED_4-battery_indicator
+Wire Wire Line
+	2450 6150 3950 6150
+Text Label 2450 6150 0    60   ~ 0
+LED-power_switcher
+Wire Wire Line
+	2450 5850 3950 5850
+Text Label 2450 5850 0    60   ~ 0
+IMU_MPU6050-SCL
+Wire Wire Line
+	2450 5950 3950 5950
+Text Label 2450 5950 0    60   ~ 0
+IMU_MPU6050-SDA
+Wire Wire Line
+	2450 5550 3950 5550
+Text Label 2450 5550 0    60   ~ 0
+Buzzer(??)
+Wire Bus Line
+	12350 7600 12950 7600
+Wire Bus Line
+	12950 7900 12350 7900
+Wire Bus Line
+	12350 7900 12350 7600
+Text Notes 12400 7850 0    60   ~ 0
+Hall sensor\nB
+Wire Wire Line
+	11600 7750 12350 7750
+Text Label 11600 7750 0    60   ~ 0
+Hall_sensor_B
+Wire Bus Line
+	12950 7600 12950 7900
+Wire Bus Line
+	12350 7950 12950 7950
+Wire Bus Line
+	12950 8250 12350 8250
+Wire Bus Line
+	12350 8250 12350 7950
+Text Notes 12400 8200 0    60   ~ 0
+Hall sensor\nC
+Wire Wire Line
+	11600 8100 12350 8100
+Text Label 11600 8100 0    60   ~ 0
+Hall_sensor_C
+Wire Bus Line
+	12950 7950 12950 8250
+Wire Wire Line
+	2450 5250 3950 5250
+Text Label 2450 5250 0    60   ~ 0
+BMF_signal-Green_B
+Wire Wire Line
+	2450 5350 3950 5350
+Text Label 2450 5350 0    60   ~ 0
+BMF_signal-Blue_C
+Wire Wire Line
+	6950 4650 8450 4650
+Text Label 7500 4650 0    60   ~ 0
+BMF_signal-Yellow_C
 $EndSCHEMATC
