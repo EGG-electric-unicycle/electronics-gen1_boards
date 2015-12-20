@@ -32,7 +32,7 @@ LIBS:stm32
 LIBS:generic_electric_unicycle-cache
 EELAYER 25 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -47,12 +47,12 @@ $EndDescr
 $Comp
 L STM32F103C8 U?
 U 1 1 5643CD2E
-P 5450 5350
-F 0 "U?" H 4150 7000 50  0000 C CNN
-F 1 "STM32F103C8" H 6500 3700 50  0000 C CNN
-F 2 "LQFP48" H 5450 5350 50  0000 C CNN
-F 3 "" H 5450 5350 50  0000 C CNN
-	1    5450 5350
+P 3650 2600
+F 0 "U?" H 2350 4250 50  0000 C CNN
+F 1 "STM32F103C8" H 4700 950 50  0000 C CNN
+F 2 "LQFP48" H 3650 2600 50  0000 C CNN
+F 3 "" H 3650 2600 50  0000 C CNN
+	1    3650 2600
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
@@ -118,11 +118,7 @@ Mosfet C - High
 Wire Wire Line
 	14350 2200 14000 2200
 Wire Wire Line
-	14350 1550 14350 2200
-Wire Wire Line
-	14350 2200 14350 3150
-Wire Wire Line
-	14350 3150 14350 3950
+	14350 1550 14350 3950
 Wire Wire Line
 	14350 3150 14000 3150
 Connection ~ 14350 2200
@@ -132,15 +128,7 @@ Connection ~ 14350 3150
 Wire Wire Line
 	11000 3950 11250 3950
 Wire Wire Line
-	11000 2200 11000 3100
-Wire Wire Line
-	11000 3100 11000 3950
-Wire Wire Line
-	11000 3950 11000 7500
-Wire Wire Line
-	11000 7500 11000 8350
-Wire Wire Line
-	11000 8350 11000 8450
+	11000 2200 11000 8450
 Wire Wire Line
 	11250 2200 11000 2200
 Wire Wire Line
@@ -151,33 +139,31 @@ Text Label 14350 1550 0    60   ~ 0
 Text Label 11000 9100 0    60   ~ 0
 GND_battery
 Wire Wire Line
-	6950 4850 8000 4850
-Text Label 7350 4850 0    60   ~ 0
+	5150 2100 6200 2100
+Text Label 5550 2300 0    60   ~ 0
 Bridge_A-High
 Wire Wire Line
-	6950 4950 8000 4950
-Text Label 7350 4950 0    60   ~ 0
+	5150 2200 6200 2200
+Text Label 5550 2200 0    60   ~ 0
 Bridge_B-High
 Wire Wire Line
-	6950 5050 8000 5050
-Text Label 7350 5050 0    60   ~ 0
+	5150 2300 6200 2300
+Text Label 5550 2100 0    60   ~ 0
 Bridge_C-High
 Wire Wire Line
-	2900 6550 3950 6550
-Text Label 2900 6550 0    60   ~ 0
+	1100 3800 2150 3800
+Text Label 1100 4000 0    60   ~ 0
 Bridge_A-Low
 Wire Wire Line
-	2900 6650 3950 6650
-Text Label 2900 6650 0    60   ~ 0
+	1100 3900 2150 3900
+Text Label 1100 3900 0    60   ~ 0
 Bridge_B-Low
 Wire Wire Line
-	2900 6750 3950 6750
-Text Label 2900 6750 0    60   ~ 0
+	1100 4000 2150 4000
+Text Label 1100 3800 0    60   ~ 0
 Bridge_C-Low
 Wire Wire Line
-	12250 2200 12350 2200
-Wire Wire Line
-	12350 2200 13000 2200
+	12250 2200 13000 2200
 Wire Wire Line
 	12250 3100 13000 3100
 Wire Wire Line
@@ -226,9 +212,7 @@ F 3 "" H 11000 8600 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 8750 11000 8850
-Wire Wire Line
-	11000 8850 11000 9100
+	11000 8750 11000 9100
 Text Notes 11450 8700 0    60   ~ 0
 Power resistor to\nmeasure the motor current
 Wire Wire Line
@@ -241,8 +225,8 @@ Connection ~ 11000 7500
 Text Label 14000 5650 0    60   ~ 0
 Current_signal
 Wire Wire Line
-	6950 4450 8000 4450
-Text Label 7350 4450 0    60   ~ 0
+	5150 1700 6200 1700
+Text Label 5550 1700 0    60   ~ 0
 PS_signal(calibrate_wheel??)
 Wire Wire Line
 	13450 2600 15450 2600
@@ -263,64 +247,64 @@ Wire Wire Line
 Wire Wire Line
 	13450 4400 13450 4200
 Wire Wire Line
-	6950 4250 8000 4250
-Text Label 7400 4250 0    60   ~ 0
+	5150 1500 6200 1500
+Text Label 5600 1500 0    60   ~ 0
 Hall_sensor_A
 Wire Wire Line
-	6950 4150 8000 4150
-Text Label 7400 4150 0    60   ~ 0
+	5150 1400 6200 1400
+Text Label 5600 1400 0    60   ~ 0
 Hall_sensor_B
 Wire Wire Line
-	6950 4050 8000 4050
-Text Label 7400 4050 0    60   ~ 0
+	5150 1300 6200 1300
+Text Label 5600 1300 0    60   ~ 0
 Hall_sensor_C
 Wire Wire Line
-	6950 5550 8450 5550
-Text Label 7350 5550 0    60   ~ 0
+	5150 2800 6650 2800
+Text Label 5550 2800 0    60   ~ 0
 LED_1-battery_indicator
 Wire Wire Line
-	2450 5650 3950 5650
-Text Label 2450 5650 0    60   ~ 0
+	650  2900 2150 2900
+Text Label 650  2900 0    60   ~ 0
 LED_2-battery_indicator
 Wire Wire Line
-	2450 5750 3950 5750
-Text Label 2450 5750 0    60   ~ 0
+	650  3000 2150 3000
+Text Label 650  3000 0    60   ~ 0
 LED_3-battery_indicator
 Wire Wire Line
-	2450 6050 3950 6050
-Text Label 2450 6050 0    60   ~ 0
+	650  3300 2150 3300
+Text Label 650  3300 0    60   ~ 0
 LED_4-battery_indicator
 Wire Wire Line
-	2450 6150 3950 6150
-Text Label 2450 6150 0    60   ~ 0
+	650  3400 2150 3400
+Text Label 650  3400 0    60   ~ 0
 LED-power_switcher
 Wire Wire Line
-	2450 5850 3950 5850
-Text Label 2450 5850 0    60   ~ 0
+	650  3100 2150 3100
+Text Label 650  3100 0    60   ~ 0
 IMU_MPU6050-SCL
 Wire Wire Line
-	2450 5950 3950 5950
-Text Label 2450 5950 0    60   ~ 0
+	650  3200 2150 3200
+Text Label 650  3200 0    60   ~ 0
 IMU_MPU6050-SDA
 Wire Wire Line
-	2450 5550 3950 5550
-Text Label 2450 5550 0    60   ~ 0
+	650  2800 2150 2800
+Text Label 650  2800 0    60   ~ 0
 Buzzer(??)
 Wire Wire Line
-	2450 5250 3950 5250
-Text Label 2450 5250 0    60   ~ 0
+	650  2500 2150 2500
+Text Label 650  2500 0    60   ~ 0
 BMF_signal-Green_B
 Wire Wire Line
-	2450 5350 3950 5350
-Text Label 2450 5350 0    60   ~ 0
+	650  2600 2150 2600
+Text Label 650  2600 0    60   ~ 0
 BMF_signal-Blue_C
 Wire Wire Line
-	6950 4650 8000 4650
-Text Label 7350 4650 0    60   ~ 0
+	5150 1900 6200 1900
+Text Label 5550 1900 0    60   ~ 0
 BMF_signal-Yellow_A
 Wire Wire Line
-	6950 4750 8000 4750
-Text Label 7350 4750 0    60   ~ 0
+	5150 2000 6200 2000
+Text Label 5550 2000 0    60   ~ 0
 Current_signal
 $Comp
 L R R?
@@ -383,47 +367,47 @@ Wire Wire Line
 Wire Wire Line
 	11650 7500 11950 7500
 Wire Bus Line
-	9000 7950 9600 7950
+	8000 1750 8600 1750
 Wire Bus Line
-	9600 8250 9000 8250
+	8600 2050 8000 2050
 Wire Bus Line
-	9000 8250 9000 7950
-Text Notes 9050 8200 0    60   ~ 0
+	8000 2050 8000 1750
+Text Notes 8050 2000 0    60   ~ 0
 Hall sensor\nA
 Wire Wire Line
-	8250 8100 9000 8100
-Text Label 8250 8100 0    60   ~ 0
+	7250 1900 8000 1900
+Text Label 7250 1900 0    60   ~ 0
 Hall_sensor_A
 Wire Bus Line
-	9600 7950 9600 8250
+	8600 1750 8600 2050
 Wire Bus Line
-	9000 8300 9600 8300
+	8000 2100 8600 2100
 Wire Bus Line
-	9600 8600 9000 8600
+	8600 2400 8000 2400
 Wire Bus Line
-	9000 8600 9000 8300
-Text Notes 9050 8550 0    60   ~ 0
+	8000 2400 8000 2100
+Text Notes 8050 2350 0    60   ~ 0
 Hall sensor\nB
 Wire Wire Line
-	8250 8450 9000 8450
-Text Label 8250 8450 0    60   ~ 0
+	7250 2250 8000 2250
+Text Label 7250 2250 0    60   ~ 0
 Hall_sensor_B
 Wire Bus Line
-	9600 8300 9600 8600
+	8600 2100 8600 2400
 Wire Bus Line
-	9000 8650 9600 8650
+	8000 2450 8600 2450
 Wire Bus Line
-	9600 8950 9000 8950
+	8600 2750 8000 2750
 Wire Bus Line
-	9000 8950 9000 8650
-Text Notes 9050 8900 0    60   ~ 0
+	8000 2750 8000 2450
+Text Notes 8050 2700 0    60   ~ 0
 Hall sensor\nC
 Wire Wire Line
-	8250 8800 9000 8800
-Text Label 8250 8800 0    60   ~ 0
+	7250 2600 8000 2600
+Text Label 7250 2600 0    60   ~ 0
 Hall_sensor_C
 Wire Bus Line
-	9600 8650 9600 8950
+	8600 2450 8600 2750
 $Comp
 L R R?
 U 1 1 5671F060
@@ -436,9 +420,7 @@ F 3 "" H 12250 6900 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12250 7050 12250 7150
-Wire Wire Line
-	12250 7150 12250 7300
+	12250 7050 12250 7300
 Wire Wire Line
 	12250 6750 12250 6700
 $Comp
@@ -467,9 +449,7 @@ Wire Wire Line
 	12600 7150 12250 7150
 Connection ~ 12250 7150
 Wire Wire Line
-	12900 7150 13050 7150
-Wire Wire Line
-	13050 7150 14150 7150
+	12900 7150 14150 7150
 $Comp
 L C C?
 U 1 1 5671F396
@@ -498,8 +478,8 @@ Wire Wire Line
 	13050 7350 13050 7150
 Connection ~ 13050 7150
 Wire Wire Line
-	2900 6450 3950 6450
-Text Label 2900 6450 0    60   ~ 0
+	1100 3700 2150 3700
+Text Label 1100 3700 0    60   ~ 0
 Max_current_signal
 Text Label 13300 7150 0    60   ~ 0
 Max_current_signal
@@ -517,11 +497,7 @@ $EndComp
 Wire Wire Line
 	11000 5550 11350 5550
 Wire Wire Line
-	11650 5550 11950 5550
-Wire Wire Line
-	11950 5550 12450 5550
-Wire Wire Line
-	12450 5550 13200 5550
+	11650 5550 13200 5550
 $Comp
 L C C?
 U 1 1 5671FCFB
@@ -547,9 +523,7 @@ $EndComp
 Wire Wire Line
 	11950 5900 11950 5900
 Wire Wire Line
-	11950 5450 11950 5550
-Wire Wire Line
-	11950 5550 11950 5600
+	11950 5450 11950 5600
 $Comp
 L R R?
 U 1 1 5671FDCC
@@ -572,17 +546,6 @@ F 1 "+3V3" H 11950 5190 50  0000 C CNN
 F 2 "" H 11950 5050 50  0000 C CNN
 F 3 "" H 11950 5050 50  0000 C CNN
 	1    11950 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM2903 U?
-U 1 1 5671FE39
-P 13500 5650
-F 0 "U?" H 13650 5800 50  0000 C CNN
-F 1 "LM358" H 13750 5500 50  0000 C CNN
-F 2 "" H 13500 5650 50  0000 C CNN
-F 3 "" H 13500 5650 50  0000 C CNN
-	1    13500 5650
 	1    0    0    -1  
 $EndComp
 Connection ~ 11950 5550
@@ -613,48 +576,207 @@ $EndComp
 $Comp
 L R R?
 U 1 1 56720075
-P 12950 6050
-F 0 "R?" V 13030 6050 50  0000 C CNN
-F 1 "1k" V 12950 6050 50  0000 C CNN
-F 2 "" V 12880 6050 30  0000 C CNN
-F 3 "" H 12950 6050 30  0000 C CNN
-	1    12950 6050
+P 12750 6050
+F 0 "R?" V 12830 6050 50  0000 C CNN
+F 1 "1k" V 12750 6050 50  0000 C CNN
+F 2 "" V 12680 6050 30  0000 C CNN
+F 3 "" H 12750 6050 30  0000 C CNN
+	1    12750 6050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12950 5750 12950 5900
+	12750 5750 12750 5900
 Wire Wire Line
-	12800 5750 12950 5750
-Wire Wire Line
-	12950 5750 13200 5750
+	12750 5750 13200 5750
 $Comp
 L GND #PWR?
 U 1 1 567201E5
-P 12950 6200
-F 0 "#PWR?" H 12950 5950 50  0001 C CNN
-F 1 "GND" H 12950 6050 50  0000 C CNN
-F 2 "" H 12950 6200 50  0000 C CNN
-F 3 "" H 12950 6200 50  0000 C CNN
-	1    12950 6200
+P 12750 6200
+F 0 "#PWR?" H 12750 5950 50  0001 C CNN
+F 1 "GND" H 12750 6050 50  0000 C CNN
+F 2 "" H 12750 6200 50  0000 C CNN
+F 3 "" H 12750 6200 50  0000 C CNN
+	1    12750 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 5672023E
-P 12650 5750
-F 0 "R?" V 12730 5750 50  0000 C CNN
-F 1 "10k" V 12650 5750 50  0000 C CNN
-F 2 "" V 12580 5750 30  0000 C CNN
-F 3 "" H 12650 5750 30  0000 C CNN
-	1    12650 5750
+P 13400 6300
+F 0 "R?" V 13480 6300 50  0000 C CNN
+F 1 "10k" V 13400 6300 50  0000 C CNN
+F 2 "" V 13330 6300 30  0000 C CNN
+F 3 "" H 13400 6300 30  0000 C CNN
+	1    13400 6300
 	0    -1   -1   0   
 $EndComp
-Connection ~ 12950 5750
-Wire Wire Line
-	12500 5750 12450 5750
-Wire Wire Line
-	12450 5750 12450 5550
-Connection ~ 12450 5550
 Wire Wire Line
 	13800 5650 14650 5650
+$Comp
+L R R?
+U 1 1 5674845A
+P 1950 7050
+F 0 "R?" V 2030 7050 50  0000 C CNN
+F 1 "1k5" V 1950 7050 50  0000 C CNN
+F 2 "" V 1880 7050 30  0000 C CNN
+F 3 "" H 1950 7050 30  0000 C CNN
+	1    1950 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  7050 1800 7050
+$Comp
+L BC547 Q?
+U 1 1 56748461
+P 2300 7050
+F 0 "Q?" H 2500 7125 50  0000 L CNN
+F 1 "??" H 2500 7050 50  0000 L CNN
+F 2 "TO-92" H 2500 6975 50  0000 L CIN
+F 3 "" H 2300 7050 50  0000 L CNN
+	1    2300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56748467
+P 2400 7550
+F 0 "#PWR?" H 2400 7300 50  0001 C CNN
+F 1 "GND" H 2400 7400 50  0000 C CNN
+F 2 "" H 2400 7550 50  0000 C CNN
+F 3 "" H 2400 7550 50  0000 C CNN
+	1    2400 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7050 2100 7050
+$Comp
+L R R?
+U 1 1 5674846F
+P 2400 6450
+F 0 "R?" V 2480 6450 50  0000 C CNN
+F 1 "20k" V 2400 6450 50  0000 C CNN
+F 2 "" V 2330 6450 30  0000 C CNN
+F 3 "" H 2400 6450 30  0000 C CNN
+	1    2400 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 6600 2400 6850
+Wire Wire Line
+	2400 6300 2400 6250
+$Comp
+L +3V3 #PWR?
+U 1 1 56748478
+P 2400 6250
+F 0 "#PWR?" H 2400 6100 50  0001 C CNN
+F 1 "+3V3" H 2400 6390 50  0000 C CNN
+F 2 "" H 2400 6250 50  0000 C CNN
+F 3 "" H 2400 6250 50  0000 C CNN
+	1    2400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5674847E
+P 2900 6700
+F 0 "R?" V 2980 6700 50  0000 C CNN
+F 1 "510" V 2900 6700 50  0000 C CNN
+F 2 "" V 2830 6700 30  0000 C CNN
+F 3 "" H 2900 6700 30  0000 C CNN
+	1    2900 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 6700 2400 6700
+Connection ~ 2400 6700
+Wire Wire Line
+	3050 6700 4300 6700
+$Comp
+L C C?
+U 1 1 56748488
+P 3200 7050
+F 0 "C?" H 3225 7150 50  0000 L CNN
+F 1 "C" H 3225 6950 50  0000 L CNN
+F 2 "" H 3238 6900 50  0000 C CNN
+F 3 "" H 3200 7050 50  0000 C CNN
+	1    3200 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5674848E
+P 3200 7350
+F 0 "#PWR?" H 3200 7100 50  0001 C CNN
+F 1 "GND" H 3200 7200 50  0000 C CNN
+F 2 "" H 3200 7350 50  0000 C CNN
+F 3 "" H 3200 7350 50  0000 C CNN
+	1    3200 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7200 3200 7350
+Wire Wire Line
+	3200 6900 3200 6700
+Connection ~ 3200 6700
+Text Label 3450 6700 0    60   ~ 0
+Max_current_signal
+Text Label 950  7050 0    60   ~ 0
+Bridge_A-High
+$Comp
+L R R?
+U 1 1 56748EF4
+P 1700 7300
+F 0 "R?" V 1780 7300 50  0000 C CNN
+F 1 "2k2" V 1700 7300 50  0000 C CNN
+F 2 "" V 1630 7300 30  0000 C CNN
+F 3 "" H 1700 7300 30  0000 C CNN
+	1    1700 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 7150 1700 7050
+Connection ~ 1700 7050
+$Comp
+L GND #PWR?
+U 1 1 56749083
+P 1700 7450
+F 0 "#PWR?" H 1700 7200 50  0001 C CNN
+F 1 "GND" H 1700 7300 50  0000 C CNN
+F 2 "" H 1700 7450 50  0000 C CNN
+F 3 "" H 1700 7450 50  0000 C CNN
+	1    1700 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56749143
+P 2400 7400
+F 0 "R?" V 2480 7400 50  0000 C CNN
+F 1 "1k5" V 2400 7400 50  0000 C CNN
+F 2 "" V 2330 7400 30  0000 C CNN
+F 3 "" H 2400 7400 30  0000 C CNN
+	1    2400 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM2903 U?
+U 1 1 5671FE39
+P 13500 5650
+F 0 "U?" H 13650 5800 50  0000 C CNN
+F 1 "LM358" H 13750 5500 50  0000 C CNN
+F 2 "" H 13500 5650 50  0000 C CNN
+F 3 "" H 13500 5650 50  0000 C CNN
+	1    13500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 6300 13000 6300
+Wire Wire Line
+	13000 6300 13000 5750
+Connection ~ 13000 5750
+Wire Wire Line
+	13550 6300 13950 6300
+Wire Wire Line
+	13950 6300 13950 5650
+Connection ~ 13950 5650
 $EndSCHEMATC
